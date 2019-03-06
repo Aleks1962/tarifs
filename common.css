@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Verdana;
+	background-color:#707cc2; 
+	position: relative;
+}
+.container{
+	background-color:#fff;
+	margin: 80px auto;
+	position: relative;
+	width: 70%;
+}
+
+.container:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.item-wrap{
+	display: inline-block;
+	float: left;
+}
+.item-wrap,
+.card{
+	width: 33%;
+}
+.item,
+.item-card{
+	margin: 20px 10px;
+	padding: 20px 0;
+	text-align: center;
+}
+.icon{
+	background-position: center top;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	height: 66px;
+}
+.icon-mobile{
+	background-image:url('images/mobile.png');	
+}
+.icon-desktop{
+	background-image:url('images/desktop.png');	
+}
+.icon-tv{
+	background-image:url('images/tv.png');	
+}
+.title{
+	color: #707cc2;
+	margin-top: 40px;
+}
+.text{
+	color: rgba(0,0,0,0.6);
+	font-size: 14px;
+	margin: 20px auto 0 auto;
+	width: 80%;
+}
+.price-wrap{
+	color: #707cc2;
+	margin: 20px auto 0 auto;
+}
+
+.currency,
+.month{
+	font-size: 0.9rem;
+	font-weight: 600;	
+}
+
+.currency{
+	vertical-align: top;
+}
+.value{
+	font-size: 2rem;	
+}
+
+.container .item:hover{
+	background-color: #eee;
+	cursor: pointer; 
+}
+.card{ 
+	background-color: #fff;
+	border-radius: 8px;
+	position: absolute;
+	display: none;
+	z-index: 111;
+}
+h4{
+	position: relative;
+}
+
+.confirm{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 10px;
+}
+.confirm:after{
+	content: "\2716";
+}
+.confirm:hover{
+	cursor: pointer;
+}
+
+.shadow{
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 22;
+}
+
+button{
+	background-color: blue;
+	color: #fff;
+	padding: 10px;
+	margin-top: 20px;
+	
+	
+}
+
+@media ( max-width: 992px ){
+	.item-wrap,
+	.card{
+		width: 50%;
+	}
+	.b-bott{
+		border-bottom: 1px solid  rgba(0, 0, 0, 0.2);
+	}
+	
+}
+
+@media ( max-width: 768px ){
+	.container{
+		width: 85%;
+	}
+	.item-wrap,
+	.card{
+		width: 50%;
+	}
+	
+}
+@media ( max-width: 576px ){
+	.container{
+		width: 90%;
+	}
+	.item-wrap{
+		width: 100%;
+	}
+	.card{
+		width: 90%;
+}
